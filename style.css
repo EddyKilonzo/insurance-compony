@@ -50,6 +50,16 @@ body {
     justify-content: space-between;
     margin: 0 100px;
 }
+.burger{
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+
+}
 nav .left {
     display: flex;
     align-items: center;
