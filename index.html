@@ -7,21 +7,34 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <title>Insurance company</title>
 </head>
+ <style>
+    .burger{
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+
+}
+
+ </style>
 <body>
     <div class="hero">
         <div class="hero-content1">
             <nav>
+                <button class="burger">☰</button>
                 <div class="left">
                     <h2>BrandName</h2>
-    
-                    <ul>
+                    <ul id="list">
                         <li>Home</li>
                         <li>Product</li>
                         <li>Pricing</li>
                         <li>Contact</li>
                     </ul>
                 </div>
-                <div class="right">
+                <div id="list" class="right">
                     <li>Login</li>
                     <button>Become a member <ion-icon name="arrow-forward-outline"></ion-icon></button>
                 </div>
@@ -259,14 +272,77 @@
             <P>the quick fox jumps over the lazy dog</P>
         </div>
         <div class="right">
-            <button>Contact</button>
+            <button>Contact Us</button>
         </div>
     </div>
 
     <footer>
+        <ul>
+            <li class="h1">Compony Info</li>
+            <li>About Us</li>
+            <li>Carrier</li>
+            <li>We are hiring</li>
+            <li>Blog</li>
+        </ul>
+
+        <ul>
+            <li class="h1">Legal</li>
+            <li>About Us</li>
+            <li>Carrier</li>
+            <li>We are hiring</li>
+            <li>Blog</li>
+        </ul>
+
+        <ul>
+            <li class="h1">Features</li>
+            <li>Business Marketing</li>
+            <li>User Analytics</li>
+            <li>Live Chats</li>
+            <li>Unlimited Support</li>
+        </ul>
+
+        <ul>
+            <li class="h1">Resources</li>
+            <li>IOS & Android</li>
+            <li>Watch a Demo</li>
+            <li>Customers</li>
+            <li>API</li>
+        </ul>
+
+        <ul>
+            <li class="h1">Get In Touch</li>
+            <li><ion-icon name="call-outline"></ion-icon><span>(480) 555-0103</span></li>
+            <li><ion-icon name="location-outline"></ion-icon><span>4517 Washington Ave. </li>
+            <li><ion-icon name="mail-outline"></ion-icon><span>debra.holt@example.com</span></li>
+            
+        </ul>
         
     </footer>
+    <div class="end1">
+        <div class="end">
+            <div>
+                <p>Made with love by Figmaland All right Reserved</p>
+            </div>
+            <div>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+        </div>
+    </div>
+    
 
 
 </body>
+<script>
+        const burger = document.querySelector('.burger');
+        const navLeft = document.querySelector('nav .left ul');
+        
+
+        burger.addEventListener('click', () => {
+            navLeft.classList.toggle('active');
+            
+        });
+
+</script>
 </html>
