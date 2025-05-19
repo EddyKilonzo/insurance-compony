@@ -1,0 +1,510 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+
+ICons
+/* link:https://ionic.io/ionicons */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.hero {
+    height: 98vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url(./images/hero.png);
+    /* background-color: rgba(0, 0, 0, 0.35); */
+    color: #fff;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 1; 
+}
+.hero-content1 {
+    position: relative;
+    z-index: 2;
+    margin: 0 20px
+}
+.hero nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+nav .left {
+    display: flex;
+    align-items: center;
+}
+nav .left h2 {
+    color: rgb(0, 204, 255);
+    font-weight: 800;
+    font-size: 25px;
+    margin-right: 20px;
+}
+nav .left ul  {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+nav .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+nav .right button {
+    background-color: rgb(0, 204, 255);
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    padding: 10px;
+}
+nav .right button:hover {
+    background-color: rgb(4, 113, 140);
+    transition: 0.3s all ease-in-out;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+.hero-content h1 {  
+    font-size: 2.4rem;
+    word-spacing: 1px;
+
+}
+.hero-content p {
+    font-size: 18px;
+    text-align: center;
+}
+.hero-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 60px;
+}
+.hero-buttons .quote {
+    height: 40px;
+    margin-left: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 17px;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+}
+.hero-buttons .learn {
+    height: 40px;
+    margin-left: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 17px;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+}
+.hero-buttons button:hover {
+    background-color: rgb(0, 204, 255);
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    
+}
+.about-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-top: -75px;
+    gap: 30px
+}
+.about-cards  .card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    width: 250px;
+    height: 160px;
+    
+}
+.about-cards  .card .icon {
+    color:rgb(0, 204, 255);
+    font-size: 2.0rem;
+}
+
+.about-cards  .card h2 {
+    margin:  0;
+    font-weight: 400;
+}
+.about-cards  .card p {
+    font-size: 13px;
+    font-weight: 200px;
+    color: #252525;
+    text-align: center;
+}
+#about {
+    margin-top: 40px;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 40px;
+
+}
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-content ion-icon {
+    color:rgb(0, 204, 255);
+    font-size: 5rem;
+}
+#testimonials {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#testimonials h2 {
+    font-size: 2rem;
+
+}
+#testimonials p {
+    font-size: 15px;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.testimonies{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 100px;
+    gap: 10px
+
+}
+.testimony {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #eaeaea;
+    
+}
+.testimony img {
+    width: 100px;
+    height: 100px;
+}
+.rating img {
+    width: 20px;
+    height: 20px
+}
+#partners {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.partners {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10%;
+    margin-bottom: 40px;
+}
+.partners img {
+    width: 100px;
+    
+}
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: 250px;
+    gap: 20px;
+    /* background-color: linear-gradient(to right, rgb(0, 204, 255), rgb(0, 204, 255)); */
+    background-color: rgba(0, 204, 255, 0.2);
+    border: 1px solid rgba(0, 204, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 50px;
+}
+.newsletter-input input{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    width: 300px;
+    
+}
+.newsletter-input span button {
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 204, 255);
+    width: 100px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    right: 20px;
+}
+.newsletter-input span button:hover {
+    background-color: rgb(4, 113, 140);
+    transition: 0.3s all ease-in-out;
+    color: rgb(0, 204, 255);
+    
+}
+#pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#pricing h2 {
+    font-size: 2.5rem;
+}
+#pricing p {
+    text-align: center;
+    width: 50%;
+}
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 204, 255,0.6);
+    padding: 20px;
+    width: 300px;
+    height: fit-content;
+    margin-top: 40px;
+    list-style: none;
+}
+.price h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.price p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3e3e3e;
+}
+.price h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: rgb(0, 204, 255);
+}
+.price sub {
+    font-weight: 100;
+}
+.prices { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.price li {
+    font-size: 18px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.price button {
+    width: 90%;
+    background-color: rgb(0, 204, 255);
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.price button:hover {
+    background-color: rgb(4, 113, 140);
+    transition: 0.3s all ease-in-out;
+    color: rgb(0, 204, 255);
+}
+.price:hover {
+    background-color: rgba(0, 58, 72, 0.9);
+    color: #fff;
+    transform: scale(1.1);
+    transition: 0.4s all ease-in-out;
+}
+#contact {
+    background-color: #131d2f;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    height: 750px;
+}
+.contact-paragraph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    margin-left: 100px;
+    /* margin-top: 10px; */
+    
+}
+.contact-paragraph .left h1 {
+    font-size: 1.8rem;
+}
+.contact-paragraph .left p {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.right img{
+    /* margin-top: 10px; */
+    width: 100%;
+    /* position: relative; */
+    /* margin-right: 200px; */
+    
+}
+.form-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top:  -150px;
+    margin-left: 270px;
+    margin-left: auto 20px;
+    background-color: #f1f1f1;
+    width: 50%;
+    height: fit-content;
+    border-radius: 10px;
+}
+.form-section .left {
+    background-image: url(./images/contact.png);
+    background-size: cover;
+    width: 40%;
+    height: 600px;
+    border-radius: 10px;
+    
+}
+.form-section .right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-direction: column;
+    width: 60%;
+    height: 600px;
+}
+.form-section .right h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    width: 80%;
+}
+form input {
+    height: 40px;
+    border: 1px solid rgba(198, 198, 198, 0.9);
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+form select {
+    height: 40px;
+    border: 1px solid rgba(198, 198, 198, 0.9);
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+
+form input::placeholder {
+    color: #ababab;
+}
+form button {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    color: #fff;
+    background-color: rgb(0, 204, 255);
+}
+form button:hover {
+    background-color: rgb(4, 113, 140);
+    transition: 0.3s all ease-in-out;
+    color: #fff;
+}
+.contact-us {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px;
+}
+.contact-us h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.contact-us p {
+    font-size: 16px;
+    color: #ababab;
+    font-weight: 400;
+}
+.contact-us button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: rgb(0, 204, 255);
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.contact-us button:hover {
+    background-color: rgb(4, 113, 140);
+    transition: 0.3s all ease-in-out;
+    color: #fff;
+    
+}
