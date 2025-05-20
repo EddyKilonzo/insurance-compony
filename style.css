@@ -263,7 +263,7 @@ nav .right button:hover {
     justify-content: space-evenly;
     gap: 10%;
     margin-bottom: 40px;
-    animation: scroll 90s infinite;
+    animation: scroll 50s infinite;
     
 }
 .partners img {
@@ -271,7 +271,7 @@ nav .right button:hover {
     margin-left: 10px;
     
 }
-@keyframes scroll {
+/* @keyframes scroll {
     0% {
         opacity: 0;
         transform: translateX(0);
@@ -280,7 +280,7 @@ nav .right button:hover {
         opacity: 1;
         transform: translateX(-100%);
     }
-}
+} */
 .newsletter {
     display: flex;
     align-items: center;
@@ -289,8 +289,8 @@ nav .right button:hover {
     margin-left: 420px;
     gap: 20px;
     /* background-color: linear-gradient(to right, rgb(0, 204, 255), rgb(0, 204, 255)); */
-    background-color: rgba(0, 204, 255, 0.2);
-    border: 1px solid rgba(0, 204, 255, 0.8);
+    /* background-color: rgba(0, 204, 255, 0.2); */
+    background: linear-gradient(to right, rgba(0, 204, 255, 0.8),rgba(0, 204, 255, 0.5));
     border-radius: 15px;
     padding: 20px;
     margin-top: 50px;
@@ -809,7 +809,7 @@ footer > ul li ion-icon {
         display: none;
         position: absolute;
         top: 60px;
-           width: 100%;
+           width: 80%;
         background: rgba(0, 0, 0, 0.9);
         padding: 20px;
         text-align: center;
@@ -1017,7 +1017,7 @@ footer > ul li ion-icon {
             display: none;
             position: absolute;
             top: 60px;
-               width: 100%;
+               width: 80%;
             background: rgba(0, 0, 0, 0.9);
             padding: 20px;
             text-align: center;
