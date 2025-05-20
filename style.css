@@ -1040,7 +1040,7 @@ footer > ul li ion-icon {
             width: 100%;
             padding: 20px;
             text-align: center;
-            z-index: 1000;
+            /* z-index: 1000; */
         }
     
         nav .right.active {
